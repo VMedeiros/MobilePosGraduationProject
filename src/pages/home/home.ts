@@ -63,7 +63,7 @@ export class HomePage {
       // infowindow.setContent(place.name);
       // infowindow.open(map, this);
       infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-        'Place ID: ' + place.place_id + '<br>' +
+        'N° Identificação: ' + place.place_id + '<br>' +
         place.vicinity + '</div>');
       infowindow.open(map, this);
     });
