@@ -1,3 +1,5 @@
+import { HospitalPage } from './../pages/hospital/hospital';
+import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,14 +8,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ConnectivityProvider } from '../providers/connectivity/connectivity';
-import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
-import { LocationsProvider } from '../providers/locations/locations';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    HospitalPage
   ],
   imports: [
     BrowserModule,
@@ -22,15 +23,14 @@ import { LocationsProvider } from '../providers/locations/locations';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    HospitalPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ConnectivityProvider,
-    GoogleMapsProvider,
-    LocationsProvider
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
   ]
 })
-export class AppModule {}
+export class AppModule { }

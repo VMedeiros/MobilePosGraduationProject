@@ -1,11 +1,85 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-     Hospitais
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menuIcon"></ion-icon>
+    </button>
+    <ion-title>Nearby Places</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div #map id="map"></div>
+<ion-content padding class="app">
+
+  <ion-list>
+
+    <ion-card>
+      <div >
+      <img src="assets/imgs/hospital.png" class="userIcon" />
+      </div>
+
+      <ion-card-content>
+        <ion-card-title class="cardTitle">
+          Localizar Hospitais
+        </ion-card-title>
+        <p>
+          Você pode localizar os
+          <b> Hospitais </b> mais próximos à você.
+        </p>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button block small round clear strong class="button" (click)="openHospital()">Localizar</button>
+          </ion-col>
+        </ion-row>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <div>
+      <img src="assets/imgs/nearby.png" class="userIcon" />
+      </div>
+
+      <ion-card-content>
+        <ion-card-title class="cardTitle">
+          Localizar Farmácias
+        </ion-card-title>
+        <p>
+          Você pode localizar as
+          <b> Farmácias </b> mais próximas à você.
+        </p>
+
+        <ion-row>
+          <ion-col>
+             <button ion-button block small round clear strong class="button" (click)="openFarmacia()">Localizar</button>
+          </ion-col>
+        </ion-row>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <div >
+      <img src="assets/imgs/bombeiro.png" class="userIcon" />
+      </div>
+
+      <ion-card-content>
+        <ion-card-title class="cardTitle">
+          Localizar Delegacias
+        </ion-card-title>
+        <p>
+          Você pode localizar as
+          <b> Delegacias </b> mais próximas à você.
+        </p>
+
+        <ion-row>
+          <ion-col>
+             <button ion-button block small round clear strong class="button" (click)="openDelegacia()">Localizar</button>
+          </ion-col>
+        </ion-row>
+        
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+
 </ion-content>

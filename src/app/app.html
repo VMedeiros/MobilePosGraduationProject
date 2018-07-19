@@ -1,1 +1,73 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu id="myMenu" [content]="content" side="left">
+  <ion-header transparent>
+    <ion-toolbar transparent>
+      <ion-title align="center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="app">
+
+    <ion-card>
+      <ion-card-content>
+        <img src="assets/imgs/smart.png" class="menuIcon2">
+        <p align="center" class="texto">
+          <b>FindPlaces</b>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item-group>
+        <ion-list>
+
+          <hr>
+          <ion-item menuClose="myMenu">
+            <ion-avatar item-start>
+              <img src="assets/imgs/hospital.png" class="logoIcon">
+            </ion-avatar>
+            <b>Hospitais</b>
+          </ion-item>
+          <hr>
+
+          <hr>
+          <ion-item menuClose="myMenu">
+            <ion-avatar item-start>
+              <img src="assets/imgs/nearby.png" class="logoIcon">
+            </ion-avatar>
+            <b>Farmácias</b>
+          </ion-item>
+
+          <hr>
+          <ion-item menuClose="myMenu">
+            <ion-avatar item-start>
+              <img src="assets/imgs/bombeiro.png" class="logoIcon">
+            </ion-avatar>
+            <b>Delegacias</b>
+          </ion-item>
+          <hr>
+
+          <hr>
+          <ion-item menuClose="myMenu">
+            <ion-avatar item-start>
+              <img src="assets/imgs/about.png" class="logoIcon">
+            </ion-avatar>
+            <b>Sobre</b>
+          </ion-item>
+          <hr>
+
+          <hr>
+          <ion-item menuClose="myMenu" (click)="loginPage()">
+            <ion-avatar item-start>
+              <img src="assets/imgs/nearby.png" class="logoIcon">
+            </ion-avatar>
+            <b>Sair</b>
+          </ion-item>
+
+        </ion-list>
+      </ion-item-group>
+    </ion-card>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

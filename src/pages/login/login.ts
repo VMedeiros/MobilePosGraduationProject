@@ -1,13 +1,13 @@
-import { HospitalPage } from './../hospital/hospital';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-login',
+  templateUrl: 'login.html',
 })
-
-export class HomePage {
+export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
   }
@@ -15,16 +15,9 @@ export class HomePage {
   ionViewDidEnter() {
     this.menuCtrl.swipeEnable(false, 'myMenu');
   }
-
-  openHospital() {
-    this.navCtrl.push(HospitalPage);
-  }
-
-  openFarmacia() {
+  
+  login() {
     this.navCtrl.push(HomePage);
   }
 
-  openDelegacia() {
-    this.navCtrl.push(HomePage);
-  }
 }
