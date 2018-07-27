@@ -1,20 +1,58 @@
 <ion-header transparent>
   <ion-toolbar transparent>
-      <ion-title align="center">Bem-Vindo</ion-title>
+    <ion-title align="center">
+      <b class="title"> Bem-Vindo </b>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="app">
+  <ion-slides pager>
 
-  <ion-card>
-      <ion-card-content>
-          <img src="assets/imgs/nearby.png" class="logoIcon"><br>
-          <h1 align="center"><b>FindPlace</b></h1>
-      </ion-card-content>
-  </ion-card>
+    <ion-slide>
+      <ion-card>
+        <ion-card-content>
+          <img src="assets/imgs/nearby.png" class="logoIcon">
+          <br>
+          <h1 align="center">
+            <b>FindPlace</b>
+          </h1>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
 
-  <p align="center">Aplicação</p>
+    <ion-slide>
+      <ion-card>
+        <ion-card-content>
+          <img src="assets/imgs/nearby.png" class="logoIcon">
+          <br>
+          <h1 align="center">
+            <b>FindPlace</b>
+          </h1>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
 
-  <button  ion-button block small round clear strong class="button"  (click)="login()">Entrar</button>
+    <ion-slide>
+      <ion-card>
+        <ion-card-content>
+          <img src="assets/imgs/nearby.png" class="logoIcon">
+          <br>
+          <h1 align="center">
+            <b>FindPlace</b>
+          </h1>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+  <p align="center">
+    <b class="text-app"> Aplicação </b>
+  </p>
+
+  <button ion-button block small round clear strong class="buttonLogin" (click)="login()">
+    <b>ENTRAR</b>
+  </button>
 
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, Platform, IonicPage } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 declare var google;
 let map: any;
@@ -22,6 +23,7 @@ export class HospitalPage {
     platform.ready().then(() => {
       this.initMap();
     });
+
   }
 
   initMap() {
@@ -78,6 +80,11 @@ export class HospitalPage {
       position: placeLoc,
       icon: image
     });
+
+  }
+
+  openHome(){
+    this.navCtrl.popTo(HomePage);
   }
 
 }
