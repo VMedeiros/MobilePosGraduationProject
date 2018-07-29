@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
+import { FarmaciaPage } from '../pages/farmacia/farmacia';
+import { HospitalPage } from '../pages/hospital/hospital';
+import { DelegaciaPage } from '../pages/delegacia/delegacia';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,7 +24,11 @@ export class MyApp {
 
 constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   this.pages = [
-    { title: 'Conversor', component: HomePage },
+    { title: 'Home', component: HomePage },
+    { title: 'Hospitais', component: HospitalPage },
+    { title: 'Farmácias', component: FarmaciaPage },
+    { title: 'Delegacias', component: DelegaciaPage },
+    { title: 'Sobre', component: HomePage },
     { title: 'Sair', component: LoginPage },
   ];
 
@@ -35,6 +42,22 @@ initializeApp() {
 }
 
 homePage() {
+  this.nav.push(HomePage);
+}
+
+hospitalPage(){
+  this.nav.push(HospitalPage);
+}
+
+farmaciaPage(){
+  this.nav.push(FarmaciaPage);
+}
+
+delegaciaPage(){
+  this.nav.push(DelegaciaPage);
+}
+
+sobrePage(){
   this.nav.push(HomePage);
 }
 

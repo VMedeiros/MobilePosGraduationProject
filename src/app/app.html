@@ -21,7 +21,7 @@
         <ion-list>
 
           <hr>
-          <ion-item menuClose="myMenu">
+          <ion-item menuClose="myMenu" (click)="hospitalPage()">
             <ion-avatar item-start>
               <img src="assets/imgs/hospital.png" class="logoIcon">
             </ion-avatar>
@@ -30,15 +30,16 @@
           <hr>
 
           <hr>
-          <ion-item menuClose="myMenu">
+          <ion-item menuClose="myMenu" (click)="farmaciaPage()">
             <ion-avatar item-start>
               <img src="assets/imgs/nearby.png" class="logoIcon">
             </ion-avatar>
             <b>Farmácias</b>
           </ion-item>
+          <hr>
 
           <hr>
-          <ion-item menuClose="myMenu">
+          <ion-item menuClose="myMenu" (click)="delegaciaPage()">
             <ion-avatar item-start>
               <img src="assets/imgs/bombeiro.png" class="logoIcon">
             </ion-avatar>
@@ -47,7 +48,7 @@
           <hr>
 
           <hr>
-          <ion-item menuClose="myMenu">
+          <ion-item menuClose="myMenu" (click)="sobrePage()">
             <ion-avatar item-start>
               <img src="assets/imgs/about.png" class="logoIcon">
             </ion-avatar>
@@ -62,6 +63,7 @@
             </ion-avatar>
             <b>Sair</b>
           </ion-item>
+          <hr>
 
         </ion-list>
       </ion-item-group>
