@@ -1,6 +1,8 @@
 import { HospitalPage } from './../hospital/hospital';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { FarmaciaPage } from '../farmacia/farmacia';
+import { DelegaciaPage } from '../delegacia/delegacia';
 
 @Component({
   selector: 'page-home',
@@ -21,10 +23,10 @@ export class HomePage {
   }
 
   openFarmacia() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(FarmaciaPage);
   }
 
   openDelegacia() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(DelegaciaPage);
   }
 }

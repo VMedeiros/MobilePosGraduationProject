@@ -4,18 +4,28 @@
       <ion-icon name="menu" class="menuIcon"></ion-icon>
     </button>
 
-    <ion-title>Hospitais mais Próximos</ion-title>
+    <ion-title>Hospitais Próximos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding class="app">
 
-  <div #map id="map"></div>
-
-  <ion-row>
-    <ion-col>
-      <button ion-button block small round clear strong class="button" (click)="openHome()">VOLTAR</button>
-    </ion-col>
-  </ion-row>
-
-</ion-content>
+    <div #map id="map"></div>
+    
+    <ion-fab middle right>
+        <button ion-fab mini class="share"><ion-icon name="share"></ion-icon></button>
+        <ion-fab-list side="left">
+          <button class="fabIcon" ion-fab mini><ion-icon class="icone" name="logo-facebook"></ion-icon></button>
+          <button class="fabIcon" ion-fab mini><ion-icon class="icone" name="logo-instagram"></ion-icon></button>
+          <button class="fabIcon" ion-fab mini><ion-icon class="icone" name="logo-whatsapp"></ion-icon></button>
+          <button class="fabIcon" ion-fab mini><ion-icon class="icone" name="logo-googleplus"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button block small round clear strong class="button" (click)="openHome()">VOLTAR</button>
+      </ion-col>
+    </ion-row>
+  
+  </ion-content>

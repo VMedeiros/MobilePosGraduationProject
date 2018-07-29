@@ -2,4 +2,45 @@ page-hospital {
     .app{
         background-color: #13818d;
       }
+      #map{
+          height: 90%;
+          border-radius: 12px;
+      }
+      .share{
+        background-color: #13818d;  
+        color:#e3f0f1;
+      }
+      .share:hover{
+        background-color: #13818d;  
+        color:#e3f0f1;
+      }
+      .fabIcon{
+        background-color: #13818d;  
+      }
+      .icone{
+          color:#e3f0f1;
+      }
+      .button{
+        background: #e3f0f1;
+        color: #13818d;
+        border-color: #e3f0f1;
+    }
+
+    /* .button:hover{
+        background: #418388;
+        color: #13818d;
+        border-color: #e3f0f1;
+    } */
+
+    .button2{
+        background: #d99698;
+        color: #e3f0f1;
+        border-color: #e3f0f1;
+    }
+    
+    /* .button2:hover{
+        background: #418388;
+        color: #13818d;
+        border-color: #e3f0f1;
+    } */
 }
