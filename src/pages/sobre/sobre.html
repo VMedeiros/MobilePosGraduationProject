@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menuIcon"></ion-icon>
+    </button>
+    <ion-title>Sobre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="app">
+  <ion-card>
+    <ion-card-content>
+
+        <button ion-button (click)="home()" class="iconButton">
+            <img src="assets/imgs/smart.png" class="menuIcon3">
+       </button>
+
+      <br>
+      <p align="center">
+        <b>Nearby Places</b>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content class="fundo" align="justify">
+      O <b>Nearby Places</b> possui uma interface simples e fácil de se utilizar, fornecendo um acesso rápido e fácil a <b>Hospitais</b>, <b>Farmácias</b> e <b>Delegacias</b>, utilizando a API do <b>Google Maps</b> para gerenciar e exibir o mapa, bem como as informações ao
+      usuário. Também possui a possibilidade de compartilhamento de localidade, para possibilitar um acompanhamento ou atendimento
+      mais rápido. Desenvolvido com o
+      <b>Ionic Framework</b> para a disciplina de desenvolvimento híbrido da Pós Graduação de Dispositivos Portáteis. Aluno
+      <b>Victor Medeiros</b>
+      <br>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col>
+      <a href="https://www.facebook.com/VictorMedeiros95">
+        <img class="iconSocial" src="assets/icon/facebook.png">
+      </a>
+    </ion-col>
+
+    <ion-col>
+      <a href="https://github.com/VMedeiros">
+        <img class="iconSocial" src="assets/icon/github.png">
+      </a>
+    </ion-col>
+
+    <ion-col>
+      <a href="https://www.linkedin.com/in/victormedeiros95/">
+        <img class="iconSocial" src="assets/icon/linkedin.png">
+      </a>
+    </ion-col>
+  </ion-row>
+
+  <button ion-button block small round clear strong (click)="home()" class="buttonVoltar">
+    <b>Voltar</b>
+  </button>
+
+</ion-content>

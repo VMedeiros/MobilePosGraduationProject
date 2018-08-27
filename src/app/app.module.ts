@@ -1,3 +1,4 @@
+import { SobrePage } from './../pages/sobre/sobre';
 import { HospitalPage } from './../pages/hospital/hospital';
 import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +19,8 @@ import { DelegaciaPage } from '../pages/delegacia/delegacia';
     LoginPage,
     HospitalPage,
     FarmaciaPage,
-    DelegaciaPage
+    DelegaciaPage,
+    SobrePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { DelegaciaPage } from '../pages/delegacia/delegacia';
     LoginPage,
     HospitalPage,
     FarmaciaPage,
-    DelegaciaPage
+    DelegaciaPage,
+    SobrePage
   ],
   providers: [
     StatusBar,

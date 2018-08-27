@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { FarmaciaPage } from '../pages/farmacia/farmacia';
 import { HospitalPage } from '../pages/hospital/hospital';
 import { DelegaciaPage } from '../pages/delegacia/delegacia';
+import { SobrePage } from '../pages/sobre/sobre';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,7 @@ constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen
     { title: 'Hospitais', component: HospitalPage },
     { title: 'Farmácias', component: FarmaciaPage },
     { title: 'Delegacias', component: DelegaciaPage },
-    { title: 'Sobre', component: HomePage },
+    { title: 'Sobre', component: SobrePage },
     { title: 'Sair', component: LoginPage },
   ];
 
@@ -58,7 +59,7 @@ delegaciaPage(){
 }
 
 sobrePage(){
-  this.nav.push(HomePage);
+  this.nav.push(SobrePage);
 }
 
 loginPage() {
