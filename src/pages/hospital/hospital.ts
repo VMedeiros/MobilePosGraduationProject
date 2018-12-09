@@ -38,7 +38,7 @@ export class HospitalPage {
       var service = new google.maps.places.PlacesService(map);
       service.nearbySearch({
         location: { lat: location.coords.latitude, lng: location.coords.longitude },
-        radius: 1000,
+        radius: 100000,
         type: ['hospital']
       }, (results, status) => {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
